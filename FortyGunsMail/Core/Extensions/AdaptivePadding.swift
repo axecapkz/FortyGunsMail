@@ -1,3 +1,13 @@
+//
+//  AdaptivePadding.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import Foundation
+import SwiftUI
+
 struct AdaptivePadding: ViewModifier {
     func body(content: Content) -> some View {
         content

@@ -1,3 +1,12 @@
+//
+//  AttachmentPreview.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import SwiftUI
+
 struct AttachmentPreview: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {

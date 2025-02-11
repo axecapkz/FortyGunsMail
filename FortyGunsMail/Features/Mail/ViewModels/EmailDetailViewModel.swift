@@ -9,10 +9,18 @@
 import SwiftUI
 
 class EmailDetailViewModel: ObservableObject {
-    @Published var email: Email?
+    @Published var emailState: ViewState<Email> = .idle
     
     func loadEmail(id: String) {
-        // В будущем здесь будет загрузка конкретного письма
-        email = Email.mockEmails().first
+        emailState = .loading
+        
+        // Имитация загрузки данных
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            if let email = Email.mockEmails().first(where: { $0.id == id }) {
+                self.emailState = .success(email)
+            } else {
+                self.emailState = .error(EmailError.notFound)
+            }
+        }
     }
 }

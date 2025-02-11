@@ -5,6 +5,8 @@
 //  Created by Azamat Kenjebayev on 2/11/25.
 //
 
+import Foundation
+import SwiftUI
 
 struct AdaptiveStack<Content: View>: View {
     let horizontalAlignment: HorizontalAlignment

@@ -1,3 +1,13 @@
+//
+//  AdaptiveToolbar.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import Foundation
+import SwiftUI
+
 struct AdaptiveToolbar: View {
     let email: Email
     let onReply: () -> Void

@@ -15,10 +15,10 @@ struct ContentView: View {
         NavigationSplitView {
             SidebarView(selectedFolder: $mailViewModel.selectedFolder)
                 .navigationDestination(for: EmailFolder.self) { folder in
-                    EmailListView(emails: mailViewModel.emails)
+                    EmailListView(viewModel: mailViewModel)
                 }
         } content: {
-            EmailListView(emails: mailViewModel.emails)
+            EmailListView(viewModel: mailViewModel)
                 .navigationDestination(for: String.self) { emailId in
                     EmailDetailView(emailId: emailId)
                 }

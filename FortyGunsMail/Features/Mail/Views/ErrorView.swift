@@ -1,3 +1,12 @@
+//
+//  ErrorView.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import SwiftUI
+
 struct ErrorView: View {
     let error: Error
     let retryAction: () -> Void

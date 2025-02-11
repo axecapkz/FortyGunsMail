@@ -1,3 +1,12 @@
+//
+//  EmailError.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import Foundation
+
 enum EmailError: LocalizedError {
     case loadFailed
     case notFound

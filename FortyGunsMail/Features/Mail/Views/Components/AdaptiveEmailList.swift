@@ -1,3 +1,13 @@
+//
+//  AdaptiveEmailList.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import Foundation
+import SwiftUI
+
 struct AdaptiveEmailList: View {
     @ObservedObject var viewModel: MailViewModel
     let selection: Binding<String?>
@@ -33,7 +43,9 @@ struct AdaptiveEmailList: View {
                 }
             }
         }
-        .listStyle(.insetGrouped)
+        #if os(iOS)
+        .listStyle(.plain)
+        #endif
     }
     
     private var macEmailList: some View {

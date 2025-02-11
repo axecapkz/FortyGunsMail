@@ -1,3 +1,12 @@
+//
+//  AdaptiveSearchField.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import SwiftUI
+
 struct AdaptiveSearchField: View {
     @Binding var searchText: String
     let placeholder: String

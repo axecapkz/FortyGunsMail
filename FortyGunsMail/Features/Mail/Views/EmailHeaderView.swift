@@ -1,3 +1,12 @@
+//
+//  EmailHeaderView.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import SwiftUI
+
 struct EmailHeaderView: View {
     let email: Email
     

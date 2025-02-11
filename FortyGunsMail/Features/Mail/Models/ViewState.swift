@@ -1,3 +1,12 @@
+//
+//  ViewState.swift
+//  FortyGunsMail
+//
+//  Created by Azamat Kenjebayev on 2/11/25.
+//
+
+import SwiftUI
+
 enum ViewState<T> {
     case idle
     case loading
