@@ -14,7 +14,7 @@ class EmailDetailViewModel: ObservableObject {
     func loadEmail(id: String) {
         emailState = .loading
         
-        // Имитация загрузки данных
+        // Imitation of preloading emails */will be fixed lated/*
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             if let email = Email.mockEmails().first(where: { $0.id == id }) {
                 self.emailState = .success(email)

@@ -13,7 +13,7 @@ struct AdaptiveSearchField: View {
     
     var body: some View {
         #if os(iOS)
-        EmptyView() // iOS использует .searchable модификатор
+        EmptyView()
         #else
         HStack {
             Image(systemName: "magnifyingglass")

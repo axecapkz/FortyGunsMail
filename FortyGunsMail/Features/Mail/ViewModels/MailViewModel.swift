@@ -33,7 +33,7 @@ class MailViewModel: ObservableObject {
     private func loadEmails() {
         emailsState = .loading
         
-        // Имитация загрузки данных
+        // Imitation of preloading emails */will be fixed lated/*
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.emailsState = .success(Email.mockEmails())
         }

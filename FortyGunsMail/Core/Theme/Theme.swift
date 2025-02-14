@@ -17,15 +17,15 @@ struct Theme {
     let tertiaryColor: Color
     
     static let light = Theme(
-        backgroundColor: Color(.sRGB, white: 1.0, opacity: 1.0), // Белый фон
-        foregroundColor: .primary, // Основной цвет текста
+        backgroundColor: Color(.sRGB, white: 1.0, opacity: 1.0),
+        foregroundColor: .primary,
         accentColor: .blue,
-        secondaryColor: .gray, // Альтернативный серый цвет
-        tertiaryColor: .gray.opacity(0.6) // Более светлый серый
+        secondaryColor: .gray,
+        tertiaryColor: .gray.opacity(0.6)
     )
     
     static let dark = Theme(
-        backgroundColor: Color(.sRGB, white: 0.1, opacity: 1.0), // Темный фон
+        backgroundColor: Color(.sRGB, white: 0.1, opacity: 1.0),
         foregroundColor: .primary,
         accentColor: .blue,
         secondaryColor: .gray,
@@ -33,7 +33,7 @@ struct Theme {
     )
     
     static let custom = Theme(
-        backgroundColor: Color(.sRGB, white: 0.95, opacity: 1.0), // Светлый серый фон
+        backgroundColor: Color(.sRGB, white: 0.95, opacity: 1.0),
         foregroundColor: .primary,
         accentColor: .indigo,
         secondaryColor: .gray,
